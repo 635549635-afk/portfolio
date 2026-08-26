@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="郭潇文，9 年经验的企业级 B 端 UX/UI 设计师，专注复杂业务系统、AI 产品与体系化设计。"
+    >
+    <title>郭潇文｜UX/UI 设计师</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-labelledby="hero-title" data-screen-label="首屏">
+        <svg
+          class="hero__system-motion"
+          viewBox="0 0 900 560"
+          preserveAspectRatio="xMidYMid meet"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <defs>
+            <linearGradient
+              id="refractive-band-gradient"
+              x1="350"
+              y1="500"
+              x2="900"
+              y2="-20"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#dcecff" stop-opacity="0" />
+              <stop offset="0.18" stop-color="#b4d7f5" stop-opacity="0.34" />
+              <stop offset="0.48" stop-color="#8ecfe9" stop-opacity="0.56" />
+              <stop offset="0.72" stop-color="#9bdedc" stop-opacity="0.34" />
+              <stop offset="0.9" stop-color="#c8eadf" stop-opacity="0.14" />
+              <stop offset="1" stop-color="#f8fbfd" stop-opacity="0" />
+            </linearGradient>
+            <linearGradient
+              id="refractive-core-gradient"
+              x1="420"
+              y1="486"
+              x2="860"
+              y2="-10"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#d8ebff" stop-opacity="0" />
+              <stop offset="0.2" stop-color="#c4e0fa" stop-opacity="0.28" />
+              <stop offset="0.48" stop-color="#dff8ff" stop-opacity="0.82" />
+              <stop offset="0.65" stop-color="#a8e4ed" stop-opacity="0.58" />
+              <stop offset="0.84" stop-color="#c7ebdf" stop-opacity="0.22" />
+              <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+            </linearGradient>
+            <linearGradient id="refractive-ribbon-diffusion" x1="300" y1="520" x2="920" y2="-30" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#dcecff" stop-opacity="0" />
+              <stop offset="0.22" stop-color="#c2dcf5" stop-opacity="0.18" />
+              <stop offset="0.54" stop-color="#a8d9eb" stop-opacity="0.3" />
+              <stop offset="0.76" stop-color="#b9e5dd" stop-opacity="0.18" />
+              <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+            </linearGradient>
+            <filter id="refractive-diffusion-blur" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="34" />
+            </filter>
+            <filter id="refractive-band-blur" x="-18%" y="-18%" width="136%" height="136%">
+              <feGaussianBlur stdDeviation="20" />
+            </filter>
+            <filter id="refractive-highlight-blur" x="-25%" y="-25%" width="150%" height="150%">
+              <feGaussianBlur stdDeviation="12" />
+            </filter>
+            <radialGradient id="refractive-grid-fade" cx="66%" cy="52%" r="58%">
+              <stop offset="0" stop-color="white" stop-opacity="0.72" />
+              <stop offset="0.58" stop-color="white" stop-opacity="0.3" />
+              <stop offset="1" stop-color="black" stop-opacity="0" />
+            </radialGradient>
+            <mask id="refractive-grid-mask">
+              <rect width="900" height="560" fill="url(#refractive-grid-fade)" />
+            </mask>
+            <linearGradient id="ribbon-field-fade" x1="260" y1="500" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="black" stop-opacity="0" />
+              <stop offset="0.18" stop-color="white" stop-opacity="0.34" />
+              <stop offset="0.42" stop-color="white" stop-opacity="0.92" />
+              <stop offset="0.88" stop-color="white" stop-opacity="1" />
+              <stop offset="1" stop-color="white" stop-opacity="0.78" />
+            </linearGradient>
+            <mask id="ribbon-field-mask">
+              <rect width="900" height="560" fill="url(#ribbon-field-fade)" />
+            </mask>
+          </defs>
+
+          <g class="hero__refractive-field" mask="url(#ribbon-field-mask)">
+            <path
+              class="hero__refractive-diffusion"
+              d="M270 568 C408 390 576 218 848 -60 L1050 18 C752 296 564 478 432 632 Z"
+            />
+            <path
+              class="hero__refractive-band"
+              d="M340 562 C488 370 642 208 876 -42 L1010 12 C766 258 604 434 470 604 Z"
+            />
+            <path
+              class="hero__refractive-highlight"
+              d="M420 554 C558 366 698 208 898 -26 L954 -2 C742 232 598 400 472 578 Z"
+            />
+
+            <g class="hero__refractive-grid" mask="url(#refractive-grid-mask)">
+              <path
+                class="hero__refractive-grid-lines hero__refractive-grid-lines--horizontal"
+                d="M300 218 L470 218 L482 214 L640 214 L650 218 L884 218 M286 310 L452 310 L464 304 L624 304 L636 310 L892 310 M306 402 L436 402 L448 396 L610 396 L622 402 L872 402"
+              />
+              <path
+                class="hero__refractive-grid-lines hero__refractive-grid-lines--vertical"
+                d="M402 106 L402 238 L398 250 L398 434 M516 76 L516 220 L510 234 L510 472 M630 48 L630 202 L624 218 L624 482 M744 28 L744 188 L738 204 L738 452"
+              />
+            </g>
+          </g>
+        </svg>
+        <div class="hero__glass-field" aria-hidden="true">
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+          <span class="hero__glass-tile"></span>
+        </div>
+        <div class="hero__pointer-halo" aria-hidden="true"></div>
+        <div class="page-container hero__layout">
+          <div class="hero__intro">
+            <h1 class="hero__title" id="hero-title">
+              <span class="hero__title-group">企业级B端</span>
+              <span class="hero__title-group">UX/UI设计师</span>
+            </h1>
+            <p class="hero__description"><span class="hero__experience">9 年经验</span> · 专注复杂业务系统、AI 产品与体系化设计</p>
+            <p class="hero__name">郭潇文 · 13588282157</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell featured-projects" aria-labelledby="featured-projects-title" data-screen-label="精选项目">
+        <div class="featured-projects__background" aria-hidden="true"></div>
+        <div class="page-container">
+          <div class="featured-projects__heading">
+            <h2 id="featured-projects-title">精选项目</h2>
+            <p>SELECTED WORK</p>
+          </div>
+
+          <div class="featured-projects__grid">
+            <a class="project-entry" href="项目PDF/xychat.pdf" target="_blank" rel="noopener">
+              <div class="project-entry__header">
+                <p class="project-entry__eyebrow"><span class="project-entry__index">01 /</span> <span class="project-entry__category">AI PRODUCT</span></p>
+                <h3>小鱼 Chat<span class="project-entry__icon" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M5 11 11 5M6 5h5v5" /></svg></span></h3>
+                <div class="project-entry__support">
+                  <p class="project-entry__description">全行级 AI 智能助手</p>
+                </div>
+              </div>
+              <div class="project-entry__visual">
+                <img src="图片准备/xychat_cover.png" alt="小鱼 Chat 产品界面">
+                <span class="project-entry__cursor" aria-hidden="true">VIEW CASE</span>
+              </div>
+            </a>
+
+            <a class="project-entry" href="项目PDF/zhfxpt.pdf" target="_blank" rel="noopener">
+              <div class="project-entry__header">
+                <p class="project-entry__eyebrow"><span class="project-entry__index">02 /</span> <span class="project-entry__category">ENTERPRISE SYSTEM</span></p>
+                <h3>综合分析平台<span class="project-entry__icon" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M5 11 11 5M6 5h5v5" /></svg></span></h3>
+                <div class="project-entry__support">
+                  <p class="project-entry__description">银行经营数据分析与决策平台</p>
+                </div>
+              </div>
+              <div class="project-entry__visual">
+                <img src="图片准备/zhfxpt_cover.png" alt="综合分析平台产品界面">
+                <span class="project-entry__cursor" aria-hidden="true">VIEW CASE</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell capabilities" aria-labelledby="capabilities-title" data-screen-label="核心能力">
+        <div class="page-container">
+          <h2 id="capabilities-title">核心能力</h2>
+
+          <div class="capabilities__grid">
+            <article class="capability-item">
+              <h3>复杂业务理解</h3>
+              <p>梳理复杂业务、角色与流程，将业务问题转化为清晰的产品与设计方案。</p>
+            </article>
+
+            <article class="capability-item">
+              <h3>体系化设计</h3>
+              <p>从信息架构到组件规范，建立一致、可复用、可持续演进的设计体系。</p>
+            </article>
+
+            <article class="capability-item">
+              <h3>项目推动</h3>
+              <p>协同业务、产品与技术团队，推动设计方案从需求到开发落地。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell contact" aria-label="联系我" data-screen-label="联系我">
+        <div class="page-container">
+          <div class="contact__content">
+            <h2 class="contact__title">期待一起，把复杂问题设计得更简单。</h2>
+            <div class="contact__details">
+              <p>郭潇文</p>
+              <p>13588282157</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      (() => {
+        const hero = document.querySelector(".hero");
+        const canFollowPointer = window.matchMedia("(hover: hover) and (pointer: fine)");
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+        const halo = hero.querySelector(".hero__pointer-halo");
+        const title = hero.querySelector(".hero__title");
+        const titleLines = [...title.querySelectorAll(".hero__title-group")];
+
+        const getInitialHaloPosition = () => {
+          const heroBounds = hero.getBoundingClientRect();
+          const titleBounds = title.getBoundingClientRect();
+          const firstLineBounds = titleLines[0].getBoundingClientRect();
+          const secondLineBounds = titleLines[1].getBoundingClientRect();
+
+          return {
+            x: titleBounds.left - heroBounds.left + titleBounds.width * 0.78,
+            y: (firstLineBounds.bottom + secondLineBounds.top) / 2 - heroBounds.top
+          };
+        };
+
+        const initialPosition = getInitialHaloPosition();
+        let targetX = initialPosition.x;
+        let targetY = initialPosition.y;
+        let currentX = targetX;
+        let currentY = targetY;
+        let targetOpacity = 0;
+        let currentOpacity = 0;
+        let targetRotation = 0;
+        let currentRotation = 0;
+        let lastPointerX = null;
+        let lastPointerY = null;
+        let rotationResetId = 0;
+        let frameId = 0;
+
+        const resetHalo = () => {
+          targetOpacity = 0;
+          targetRotation = 0;
+          lastPointerX = null;
+          lastPointerY = null;
+          if (rotationResetId) clearTimeout(rotationResetId);
+          if (!frameId) frameId = requestAnimationFrame(updateHalo);
+        };
+
+        const disableHalo = () => {
+          const nextInitialPosition = getInitialHaloPosition();
+          if (frameId) cancelAnimationFrame(frameId);
+          targetX = nextInitialPosition.x;
+          targetY = nextInitialPosition.y;
+          currentX = targetX;
+          currentY = targetY;
+          targetOpacity = 0;
+          currentOpacity = 0;
+          targetRotation = 0;
+          currentRotation = 0;
+          lastPointerX = null;
+          lastPointerY = null;
+          if (rotationResetId) clearTimeout(rotationResetId);
+          rotationResetId = 0;
+          frameId = 0;
+          halo.style.setProperty("--halo-x", `${currentX}px`);
+          halo.style.setProperty("--halo-y", `${currentY}px`);
+          halo.style.setProperty("--halo-opacity", "0");
+          halo.style.setProperty("--halo-rotation", "0deg");
+        };
+
+        const updateHalo = () => {
+          currentX += (targetX - currentX) * 0.115;
+          currentY += (targetY - currentY) * 0.115;
+          currentOpacity += (targetOpacity - currentOpacity) * 0.1;
+          currentRotation += (targetRotation - currentRotation) * 0.08;
+          halo.style.setProperty("--halo-x", `${currentX.toFixed(2)}px`);
+          halo.style.setProperty("--halo-y", `${currentY.toFixed(2)}px`);
+          halo.style.setProperty("--halo-opacity", currentOpacity.toFixed(3));
+          halo.style.setProperty("--halo-rotation", `${currentRotation.toFixed(2)}deg`);
+
+          if (
+            Math.abs(targetX - currentX) > 0.05 ||
+            Math.abs(targetY - currentY) > 0.05 ||
+            Math.abs(targetOpacity - currentOpacity) > 0.002 ||
+            Math.abs(targetRotation - currentRotation) > 0.05
+          ) {
+            frameId = requestAnimationFrame(updateHalo);
+          } else {
+            currentX = targetX;
+            currentY = targetY;
+            currentOpacity = targetOpacity;
+            currentRotation = targetRotation;
+            frameId = 0;
+          }
+        };
+
+        const handlePointerMove = (event) => {
+          if (!canFollowPointer.matches || reduceMotion.matches) return;
+          const bounds = hero.getBoundingClientRect();
+          const pointerX = event.clientX - bounds.left;
+          const pointerY = event.clientY - bounds.top;
+          const normalizedX = pointerX / bounds.width;
+          const leftFade = Math.max(0, Math.min(1, (normalizedX - 0.4) / 0.18));
+          if (lastPointerX !== null && lastPointerY !== null) {
+            const dx = pointerX - lastPointerX;
+            const dy = pointerY - lastPointerY;
+            if (Math.hypot(dx, dy) > 0.5) {
+              const movementAngle = Math.atan2(dy, dx) * (180 / Math.PI);
+              const directionalTilt = ((movementAngle + 270) % 360) - 180;
+              targetRotation = Math.max(-30, Math.min(30, directionalTilt));
+            }
+          }
+          lastPointerX = pointerX;
+          lastPointerY = pointerY;
+          targetX = pointerX;
+          targetY = pointerY;
+          targetOpacity = 0.72 + leftFade * 0.18;
+          if (rotationResetId) clearTimeout(rotationResetId);
+          rotationResetId = setTimeout(() => {
+            targetRotation = 0;
+            rotationResetId = 0;
+            if (!frameId) frameId = requestAnimationFrame(updateHalo);
+          }, 140);
+          if (!frameId) frameId = requestAnimationFrame(updateHalo);
+        };
+
+        hero.addEventListener("pointermove", handlePointerMove, { passive: true });
+        hero.addEventListener("pointerleave", resetHalo);
+        window.addEventListener("resize", disableHalo, { passive: true });
+        reduceMotion.addEventListener("change", disableHalo);
+        canFollowPointer.addEventListener("change", disableHalo);
+        disableHalo();
+        document.fonts?.ready.then(disableHalo);
+      })();
+
+      (() => {
+        const visuals = [...document.querySelectorAll(".project-entry__visual")];
+        const canHover = window.matchMedia("(hover: hover) and (pointer: fine)");
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+        const ease = (current, target, amount) => current + (target - current) * amount;
+
+        const states = visuals.map((visual) => ({
+          visual,
+          active: false,
+          frameId: 0,
+          scale: 1,
+          targetScale: 1,
+          overlay: 0,
+          targetOverlay: 0,
+          cursorX: visual.clientWidth / 2,
+          cursorY: visual.clientHeight / 2,
+          targetCursorX: visual.clientWidth / 2,
+          targetCursorY: visual.clientHeight / 2,
+          cursorOpacity: 0,
+          targetCursorOpacity: 0,
+          cursorScale: 0.92,
+          targetCursorScale: 0.92
+        }));
+
+        const render = (state) => {
+          state.scale = ease(state.scale, state.targetScale, 0.16);
+          state.overlay = ease(state.overlay, state.targetOverlay, 0.11);
+          state.cursorX = ease(state.cursorX, state.targetCursorX, 0.18);
+          state.cursorY = ease(state.cursorY, state.targetCursorY, 0.18);
+          state.cursorOpacity = ease(state.cursorOpacity, state.targetCursorOpacity, 0.16);
+          state.cursorScale = ease(state.cursorScale, state.targetCursorScale, 0.16);
+
+          state.visual.style.setProperty("--cover-scale", state.scale.toFixed(4));
+          state.visual.style.setProperty("--cover-overlay-opacity", state.overlay.toFixed(3));
+          state.visual.style.setProperty("--case-cursor-x", `${state.cursorX.toFixed(2)}px`);
+          state.visual.style.setProperty("--case-cursor-y", `${state.cursorY.toFixed(2)}px`);
+          state.visual.style.setProperty("--case-cursor-opacity", state.cursorOpacity.toFixed(3));
+          state.visual.style.setProperty("--case-cursor-scale", state.cursorScale.toFixed(3));
+
+          const unsettled =
+            Math.abs(state.targetScale - state.scale) > 0.0002 ||
+            Math.abs(state.targetOverlay - state.overlay) > 0.002 ||
+            Math.abs(state.targetCursorX - state.cursorX) > 0.05 ||
+            Math.abs(state.targetCursorY - state.cursorY) > 0.05 ||
+            Math.abs(state.targetCursorOpacity - state.cursorOpacity) > 0.002 ||
+            Math.abs(state.targetCursorScale - state.cursorScale) > 0.002;
+
+          state.frameId = unsettled ? requestAnimationFrame(() => render(state)) : 0;
+        };
+
+        const requestRender = (state) => {
+          if (!state.frameId) state.frameId = requestAnimationFrame(() => render(state));
+        };
+
+        states.forEach((state) => {
+          state.visual.addEventListener("pointerenter", (event) => {
+            if (!canHover.matches || reduceMotion.matches) return;
+            state.active = true;
+            state.targetScale = 1.015;
+            state.targetOverlay = 0.24;
+            state.targetCursorOpacity = 1;
+            state.targetCursorScale = 1;
+            const bounds = state.visual.getBoundingClientRect();
+            state.cursorX = Math.max(8, Math.min(bounds.width - 90, event.clientX - bounds.left + 14));
+            state.cursorY = Math.max(18, Math.min(bounds.height - 18, event.clientY - bounds.top));
+            state.targetCursorX = state.cursorX;
+            state.targetCursorY = state.cursorY;
+            requestRender(state);
+          });
+
+          state.visual.addEventListener("pointermove", (event) => {
+            if (!state.active || !canHover.matches || reduceMotion.matches) return;
+            const bounds = state.visual.getBoundingClientRect();
+            const pointerX = event.clientX - bounds.left;
+            const pointerY = event.clientY - bounds.top;
+            state.targetCursorX = Math.max(8, Math.min(bounds.width - 90, pointerX + 14));
+            state.targetCursorY = Math.max(18, Math.min(bounds.height - 18, pointerY));
+            requestRender(state);
+          }, { passive: true });
+
+          state.visual.addEventListener("pointerleave", () => {
+            state.active = false;
+            state.targetScale = 1;
+            state.targetOverlay = 0;
+            state.targetCursorOpacity = 0;
+            state.targetCursorScale = 0.92;
+            requestRender(state);
+          });
+        });
+
+        const resetInteractions = () => {
+          states.forEach((state) => {
+            if (state.frameId) cancelAnimationFrame(state.frameId);
+            state.active = false;
+            state.frameId = 0;
+            state.scale = 1;
+            state.targetScale = 1;
+            state.overlay = 0;
+            state.targetOverlay = 0;
+            state.cursorOpacity = 0;
+            state.targetCursorOpacity = 0;
+            state.cursorScale = 0.92;
+            state.targetCursorScale = 0.92;
+            [
+              "--cover-scale",
+              "--cover-overlay-opacity",
+              "--case-cursor-x",
+              "--case-cursor-y",
+              "--case-cursor-opacity",
+              "--case-cursor-scale"
+            ].forEach((property) => state.visual.style.removeProperty(property));
+          });
+        };
+
+        reduceMotion.addEventListener("change", resetInteractions);
+        canHover.addEventListener("change", resetInteractions);
+      })();
+
+      (() => {
+        const capabilities = document.querySelector(".capabilities");
+        const contact = document.querySelector(".contact");
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+        if (!capabilities || !contact || reduceMotion.matches) return;
+
+        document.documentElement.classList.add("motion-ready");
+        let sequenceStarted = false;
+        let closingReady = false;
+        let contactInView = false;
+        let closingTimer = 0;
+
+        const revealClosing = () => {
+          if (closingReady && contactInView) {
+            contact.classList.add("is-motion-visible");
+            contactObserver.unobserve(contact);
+          }
+        };
+
+        const capabilitiesObserver = new IntersectionObserver((entries, observer) => {
+          if (!entries[0].isIntersecting || sequenceStarted) return;
+          sequenceStarted = true;
+          capabilities.classList.add("is-motion-visible");
+          observer.unobserve(capabilities);
+          closingTimer = window.setTimeout(() => {
+            closingReady = true;
+            revealClosing();
+          }, 1900);
+        }, {
+          threshold: 0.3,
+          rootMargin: "0px 0px -18% 0px"
+        });
+
+        const contactObserver = new IntersectionObserver((entries) => {
+          contactInView = entries[0].isIntersecting;
+          if (contactInView && !sequenceStarted) {
+            sequenceStarted = true;
+            closingReady = true;
+            capabilities.classList.add("is-motion-visible");
+            capabilitiesObserver.unobserve(capabilities);
+          }
+          revealClosing();
+        }, {
+          threshold: 0.38,
+          rootMargin: "0px 0px -12% 0px"
+        });
+
+        const showStaticState = () => {
+          if (!reduceMotion.matches) return;
+          if (closingTimer) clearTimeout(closingTimer);
+          capabilitiesObserver.disconnect();
+          contactObserver.disconnect();
+          capabilities.classList.add("is-motion-visible");
+          contact.classList.add("is-motion-visible");
+          document.documentElement.classList.remove("motion-ready");
+        };
+
+        capabilitiesObserver.observe(capabilities);
+        contactObserver.observe(contact);
+        reduceMotion.addEventListener("change", showStaticState);
+      })();
+    </script>
+  </body>
+</html>

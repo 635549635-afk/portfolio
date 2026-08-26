@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-width: 1920px;
+  height: 100%;
+  min-height: 1080px;
+  margin: 0;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.xychat-frame {
+  container-type: inline-size;
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  color: #ffffff;
+  background: #ffffff;
+  font-family: "PingFang SC", sans-serif;
+}
+
+.xychat-frame__background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.xychat-frame__decoration {
+  position: absolute;
+  pointer-events: none;
+}
+
+.xychat-frame__decoration--one {
+  inset: 5.83% 49.29% 52.74% 21.2%;
+}
+
+.xychat-frame__decoration--two {
+  inset: 9.91% 49.16% 44.81% 18.59%;
+}
+
+.xychat-brand {
+  position: absolute;
+  top: 6.8519%;
+  left: 6.25%;
+  display: flex;
+  align-items: center;
+  gap: 0.4167cqw;
+  height: 9.537%;
+  font-size: 2.5cqw;
+  font-weight: 600;
+  letter-spacing: 0.05cqw;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.xychat-brand__avatar {
+  position: relative;
+  display: block;
+  width: 4.6354cqw;
+  height: 100%;
+}
+
+.xychat-brand__ring {
+  position: absolute;
+  top: 11.78%;
+  left: 5.88%;
+  width: 86.7%;
+  height: 74.91%;
+  overflow: visible;
+}
+
+.xychat-brand__fish {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.xychat-title {
+  position: absolute;
+  top: 17.5%;
+  left: 6.267%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  color: #ffffff;
+  font-family: "FZChaoCuHei-M10", "方正超粗黑简体", "FZCCHK", "PingFang SC", sans-serif;
+  font-size: 5.7292cqw;
+  font-weight: 400;
+  letter-spacing: 0.1146cqw;
+  line-height: 6.7708cqw;
+  text-shadow: 0 0.4167cqw 0.625cqw rgba(16, 58, 176, 0.15);
+  transform: skewX(-5deg);
+  transform-origin: left top;
+  white-space: nowrap;
+}
+
+.xychat-title__line {
+  display: flex;
+  align-items: baseline;
+}
+
+.xychat-title strong {
+  margin-left: 0.3125cqw;
+  color: #3bf9fc;
+  font-size: 6.25cqw;
+  font-weight: 400;
+  letter-spacing: 0.125cqw;
+  text-shadow: 0 0.4167cqw 0.625cqw rgba(16, 58, 176, 0.21);
+}
+
+.xychat-subtitle {
+  position: absolute;
+  top: 43.7037%;
+  left: 6.25%;
+  display: flex;
+  align-items: center;
+  font-size: 2.0833cqw;
+  font-weight: 400;
+  letter-spacing: 0.0833cqw;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.xychat-subtitle::before {
+  width: 0.625cqw;
+  height: 3.5185cqw;
+  margin-right: 0.8333cqw;
+  border-radius: 0.3125cqw;
+  content: "";
+  background: #3bf9fc;
+}
+
+.xychat-card {
+  position: absolute;
+  top: 54.1667%;
+  left: 6.25%;
+  width: 69.5313%;
+  height: 38.0556%;
+  overflow: hidden;
+  border: 0.0521cqw solid rgba(255, 255, 255, 0.5);
+  border-radius: 1.875cqw;
+  background: linear-gradient(89.414deg, rgba(65, 154, 255, 0.67) 0.157%, rgba(255, 255, 255, 0) 61.991%);
+  box-shadow: 0 0.5208cqw 1.0417cqw rgba(16, 58, 176, 0.1);
+  backdrop-filter: blur(0.5208cqw);
+}
+
+.xychat-card__row {
+  position: absolute;
+  left: 2.0833cqw;
+  display: grid;
+  grid-template-columns: 4.0625cqw 7.5521cqw auto;
+  column-gap: 1.3021cqw;
+  align-items: center;
+  width: 39.5833cqw;
+  min-height: 4.0625cqw;
+}
+
+.xychat-card__row::after {
+  position: absolute;
+  right: 0;
+  bottom: -1.0417cqw;
+  left: 0;
+  border-bottom: 0.0521cqw dashed rgba(255, 255, 255, 0.4);
+  content: "";
+}
+
+.xychat-card__row > img:first-child {
+  width: 4.0625cqw;
+  height: 4.0625cqw;
+}
+
+.xychat-card__row strong {
+  color: #53f3fc;
+  font-size: 1.6667cqw;
+  font-weight: 600;
+  letter-spacing: 0.0333cqw;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.xychat-card__row span {
+  color: #ffffff;
+  font-size: 1.4583cqw;
+  font-weight: 400;
+  letter-spacing: 0.0292cqw;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.xychat-card__row--role {
+  top: 2.2222cqw;
+}
+
+.xychat-card__row--data {
+  top: 8.6285cqw;
+}
+
+.xychat-card__row--vision {
+  top: 15.3646cqw;
+}
+
+.xychat-card__row--vision::after {
+  display: none;
+}
+
+.xychat-card__row--vision span {
+  width: 24.1667cqw;
+  white-space: normal;
+}
+
+.xychat-card__trend {
+  position: absolute;
+  top: 50%;
+  left: 38.2813cqw;
+  width: 0.8333cqw;
+  height: 1.1979cqw;
+  transform: translateY(-50%);
+}

@@ -1,0 +1,11 @@
+.DS_Store
+**/.DS_Store
+
+.sites-deploy/
+.agents/
+
+hero-baseline-*.tar.gz
+
+node_modules/
+.env
+.env.*
