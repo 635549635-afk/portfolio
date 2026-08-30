@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI 工作流概念设计案例">
+    <title>当AI Agent开始参与任务执行</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="case-page">
+      <section class="page-unit hero" aria-labelledby="case-title">
+        <img class="hero__background" src="assets/01bg.png" alt="">
+
+        <header class="hero__copy">
+          <p class="hero__eyebrow">AI WORKFLOW · 概念案例</p>
+          <div class="hero__content">
+            <h1 id="case-title">当 AI Agent<br>开始参与任务执行</h1>
+            <p class="hero__thesis">从「给出建议」到「参与执行」</p>
+            <div class="case-summary">
+              <p class="hero__meta"><span class="hero__meta-agent">Agent 工作流</span><span class="hero__meta-separator"> · </span><span class="hero__meta-collaboration">人机协作</span><span class="hero__meta-separator"> · </span><span class="hero__meta-boundary">执行边界</span></p>
+              <p class="hero__description">探索 Agent 如何参与企业任务执行<br>以及人、Agent 与系统之间的协作与控制关系</p>
+            </div>
+          </div>
+        </header>
+
+        <div class="hero-visual" aria-label="方案生成、用户确认与 Agent 执行的产品流程界面">
+          <figure class="process-screen process-screen--execution">
+            <div class="process-screen__viewport">
+              <img src="assets/P03.png" alt="跨系统执行进度，包含成功、执行中、被阻塞和待审批状态">
+            </div>
+          </figure>
+
+          <figure class="process-screen process-screen--confirmation">
+            <div class="process-screen__viewport">
+              <img src="assets/P02.png" alt="权限与执行确认界面">
+            </div>
+          </figure>
+
+          <figure class="process-screen process-screen--proposal">
+            <div class="process-screen__viewport">
+              <img src="assets/main.png" alt="开通方案审阅与核心权限方案界面">
+            </div>
+          </figure>
+        </div>
+
+        <a class="prototype-cta" id="prototype" href="#prototype" aria-label="查看交互原型"></a>
+
+      </section>
+
+      <section class="context context-v3" aria-labelledby="context-title">
+        <div class="page-unit context-v3__page context-v3__page--analysis">
+          <header class="context__header">
+            <p class="context__index">02 / CONTEXT &amp; PROBLEM</p>
+            <h2 id="context-title">从设计任务到核心问题</h2>
+          </header>
+
+          <section class="context-v3__project" aria-labelledby="project-title">
+            <h3 id="project-title">项目背景</h3>
+            <p>围绕企业员工权限开通场景，设计一套从需求提出、方案生成，<br>到确认审批与跨系统执行的完整任务流程。</p>
+          </section>
+
+          <section class="context-v3__workflow-card" aria-labelledby="complexity-title">
+            <h3 id="complexity-title">一个权限任务，背后是多重业务复杂度</h3>
+            <div class="context-v3__workflow-notes" aria-label="业务复杂度">
+              <p class="context-v3__workflow-note context-v3__workflow-note--evidence">岗位规则 / 项目身份 / 权限依赖</p>
+              <p class="context-v3__workflow-note context-v3__workflow-note--approval">审批条件</p>
+              <p class="context-v3__workflow-note context-v3__workflow-note--systems">多系统执行</p>
+            </div>
+            <ol class="context-v3__process">
+              <li><span>提出需求</span></li>
+              <li><span>Agent 核对</span></li>
+              <li><span>生成方案</span></li>
+              <li class="context-v3__process-human"><span>经理确认</span><small>关键决策点</small></li>
+              <li><span>必要审批</span></li>
+              <li><span>跨系统执行</span></li>
+              <li><span>查看结果</span></li>
+            </ol>
+          </section>
+        </div>
+
+        <div class="page-unit context-v3__page context-v3__page--reframe">
+          <span class="editorial-section-number context-v3__section-number" aria-hidden="true">02</span>
+          <section class="context-v3__insight-block">
+            <p>真正复杂的不是「申请」，<br>而是<span>「判断与执行」</span>。</p>
+          </section>
+
+          <section class="context-v3__question" aria-labelledby="design-question-title">
+            <h3 id="design-question-title">我重新定义的问题</h3>
+            <p>当 AI 从「提供建议」进一步进入「任务执行」，<br>真正需要设计的，不只是 AI 能不能执行，<br>而是它应该执行到哪里。</p>
+          </section>
+
+          <footer class="context-v3__principles">
+            <p class="context-v3__principles-label">设计目标</p>
+            <div class="context-v3__principles-list">
+              <div><strong>过程可理解</strong><span>信息透明，过程清晰</span></div>
+              <i>/</i>
+              <div><strong>决策可控制</strong><span>明确决策节点与控制边界</span></div>
+              <i>/</i>
+              <div><strong>结果可追踪</strong><span>执行可追踪，结果可验证</span></div>
+            </div>
+          </footer>
+        </div>
+      </section>
+
+      <section class="page-unit process-page" aria-labelledby="process-title">
+        <span class="editorial-section-number process-page__section-number" aria-hidden="true">03</span>
+        <header class="process-page__header">
+          <p>03 / PROCESS</p>
+          <h2 id="process-title">AI 如何参与设计，也如何进入业务</h2>
+        </header>
+
+        <section class="collaboration collaboration--design" aria-labelledby="design-collaboration-title">
+          <h3 id="design-collaboration-title">AI 如何参与设计过程</h3>
+          <div class="collaboration__body">
+            <div class="role-lockup">
+              <div class="role-capsule"><strong>AI</strong><small>参与分析与推演</small></div>
+            </div>
+            <ol class="collaboration-flow" aria-label="AI 与我的设计协作流程">
+              <li class="collaboration-flow__human"><i aria-hidden="true"></i><strong>定义问题</strong><small>我</small></li>
+              <li class="collaboration-flow__ai"><i aria-hidden="true"></i><strong>流程推演</strong><small>AI</small></li>
+              <li class="collaboration-flow__ai"><i aria-hidden="true"></i><strong>异常补全</strong><small>AI</small></li>
+              <li class="collaboration-flow__human"><i aria-hidden="true"></i><strong>设计取舍</strong><small>我</small></li>
+              <li class="collaboration-flow__human"><i aria-hidden="true"></i><strong>最终收敛</strong><small>我</small></li>
+            </ol>
+            <p class="collaboration__conclusion">AI 扩大<span>分析与推演范围</span>，<br>我负责<span>判断与收敛</span>。</p>
+          </div>
+        </section>
+
+        <div class="collaboration-bridge" aria-label="同一种协作原则">
+          <i></i>
+          <p><span>同一种</span><strong>协作原则</strong></p>
+        </div>
+
+        <section class="collaboration collaboration--product" aria-labelledby="product-collaboration-title">
+          <h3 id="product-collaboration-title">Agent 如何参与任务执行</h3>
+          <div class="collaboration__body">
+            <div class="role-lockup">
+              <div class="role-capsule"><strong>Agent</strong><small>承接执行复杂度</small></div>
+            </div>
+            <ol class="collaboration-flow" aria-label="Agent 与用户的产品协作流程">
+              <li class="collaboration-flow__human"><i aria-hidden="true"></i><strong>提出目标</strong><small>用户</small></li>
+              <li class="collaboration-flow__ai"><i aria-hidden="true"></i><strong>方案生成</strong><small>Agent</small></li>
+              <li class="collaboration-flow__human"><i aria-hidden="true"></i><strong>判断方案</strong><small>用户</small></li>
+              <li class="collaboration-flow__ai"><i aria-hidden="true"></i><strong>跨系统执行</strong><small>Agent</small></li>
+              <li class="collaboration-flow__human"><i aria-hidden="true"></i><strong>异常介入</strong><small>用户</small></li>
+            </ol>
+            <p class="collaboration__conclusion">Agent 越深入<span>任务执行</span>，<br>越需要重新思考<span>控制权的位置</span>。</p>
+          </div>
+        </section>
+      </section>
+
+      <section class="page-unit workflow-page" aria-labelledby="workflow-title">
+        <span class="editorial-section-number workflow-page__section-number" aria-hidden="true">04</span>
+
+        <header class="workflow-page__header">
+          <p>04 / WORKFLOW</p>
+          <h2 id="workflow-title">构建可执行的人机协作工作流</h2>
+        </header>
+
+        <section class="control-handoff" aria-label="用户与 Agent 动态交接控制权的工作流">
+          <div class="control-handoff__lane control-handoff__lane--user">
+            <strong>User</strong>
+            <span>关键决策与责任</span>
+          </div>
+          <div class="control-handoff__lane control-handoff__lane--agent">
+            <strong>Agent</strong>
+            <span>承接执行复杂度</span>
+          </div>
+
+          <div class="control-handoff__grid" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i>
+          </div>
+
+          <ol class="control-handoff__stages">
+            <li>
+              <header><span>01</span><strong>理解需求</strong></header>
+              <p class="control-handoff__action control-handoff__action--user">提出目标</p>
+              <p class="control-handoff__action control-handoff__action--agent"><span>读取上下文</span><span>核对规则</span></p>
+            </li>
+            <li>
+              <header><span>02</span><strong>生成方案</strong></header>
+              <p class="control-handoff__action control-handoff__action--user">判断 / 调整</p>
+              <p class="control-handoff__action control-handoff__action--agent"><span>生成建议</span><span>说明依据</span></p>
+            </li>
+            <li>
+              <header><span>03</span><strong>确认边界</strong></header>
+              <p class="control-handoff__action control-handoff__action--user">确认执行</p>
+              <p class="control-handoff__action control-handoff__action--agent"><span>判断可执行</span><span>识别审批</span></p>
+            </li>
+            <li>
+              <header><span>04</span><strong>执行任务</strong></header>
+              <p class="control-handoff__action control-handoff__action--user">—</p>
+              <p class="control-handoff__action control-handoff__action--agent"><span>跨系统执行</span><span>追踪状态</span></p>
+            </li>
+            <li>
+              <header><span>05</span><strong>异常反馈</strong></header>
+              <p class="control-handoff__action control-handoff__action--user">必要介入</p>
+              <p class="control-handoff__action control-handoff__action--agent"><span>解释原因</span><span>给出下一步</span></p>
+            </li>
+          </ol>
+
+          <svg class="control-handoff__ribbon" viewBox="0 0 1680 340" role="img" aria-label="控制权在用户与 Agent 之间动态交接">
+            <defs>
+              <linearGradient id="control-handoff-fade" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#1766f5" stop-opacity="0"/>
+                <stop offset="8%" stop-color="#1766f5" stop-opacity="0.83"/>
+                <stop offset="92%" stop-color="#1766f5" stop-opacity="0.83"/>
+                <stop offset="100%" stop-color="#1766f5" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path d="M300 121 L342 121 C385 121 455 209 498 209 L622 209 C665 209 735 121 778 121 L902 121 C945 121 1015 209 1058 209 L1462 209 C1505 209 1575 121 1618 121 L1660 121" fill="none" stroke="url(#control-handoff-fade)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="700" cy="165" r="2.5" fill="#f7faff" stroke="#1766f5" stroke-width="1"/>
+            <circle cx="980" cy="165" r="2.5" fill="#f7faff" stroke="#1766f5" stroke-width="1"/>
+            <circle cx="1058" cy="209" r="2.5" fill="#f7faff" stroke="#1766f5" stroke-width="1"/>
+            <circle cx="1540" cy="165" r="2.5" fill="#f7faff" stroke="#1766f5" stroke-width="1"/>
+          </svg>
+
+          <p class="control-handoff__annotation control-handoff__annotation--judgement">方案判断</p>
+          <p class="control-handoff__annotation control-handoff__annotation--authorization">执行授权</p>
+          <p class="control-handoff__annotation control-handoff__annotation--approval">必要审批</p>
+          <p class="control-handoff__annotation control-handoff__annotation--exception">异常介入</p>
+        </section>
+
+        <p class="workflow-page__statement">Agent 承接执行复杂度，<br>控制权在「<span>自主执行</span>」与「<span>人工决策</span>」之间<span>动态交接</span>。</p>
+      </section>
+
+      <section class="page-unit key-moments-page" aria-labelledby="key-moments-title">
+        <span class="editorial-section-number key-moments-page__section-number" aria-hidden="true">05</span>
+        <header class="key-moments-page__header">
+          <p>05 / KEY MOMENTS</p>
+          <h2 id="key-moments-title">Agent 执行中的三个关键时刻</h2>
+        </header>
+
+        <section class="key-moments" aria-label="Agent 执行中的关键设计证据">
+          <article class="key-moment key-moment--why">
+            <div class="key-moment__copy">
+              <p class="key-moment__label">WHY</p>
+              <h3>为什么相信 Agent 的判断？</h3>
+              <p class="key-moment__design-principle">不是告诉用户「答案是什么」，<br>而是让用户知道「<span>答案从哪里来</span>」。</p>
+              <p class="key-moment__principle">判断有依据 <span>→</span> 建议可解释</p>
+            </div>
+            <figure class="evidence-stage">
+              <img class="evidence-stage__full" src="assets/01.png" alt="完整权限方案与展开的方案依据">
+            </figure>
+          </article>
+
+          <article class="key-moment key-moment--when">
+            <figure class="evidence-stage">
+              <img class="evidence-stage__full" src="assets/02.png" alt="完整权限执行条件判断界面">
+            </figure>
+            <div class="key-moment__copy">
+              <p class="key-moment__label">WHEN</p>
+              <h3>什么时候交还控制权？</h3>
+              <p class="key-moment__design-principle">Agent 可以判断「<span class="key-moment__accent--agent">能不能做</span>」，<br>但不替用户决定「<span class="key-moment__accent--human">要不要做</span>」。</p>
+              <p class="key-moment__principle"><strong class="key-moment__accent--agent">执行有边界</strong> <span>→</span> <strong class="key-moment__accent--human">控制可交还</strong></p>
+            </div>
+          </article>
+
+          <article class="key-moment key-moment--what-if">
+            <div class="key-moment__copy">
+              <p class="key-moment__label">WHAT IF</p>
+              <h3>Agent 做不下去怎么办？</h3>
+              <p class="key-moment__design-principle">异常不是执行的终点，<br>而是下一次「<span class="key-moment__accent--human">人机交接</span>」的起点。</p>
+              <p class="key-moment__principle">异常可解释 <span>→</span> 任务可恢复</p>
+            </div>
+            <figure class="evidence-stage">
+              <img class="evidence-stage__full" src="assets/03.png" alt="完整跨系统执行进度与异常状态界面">
+            </figure>
+          </article>
+        </section>
+      </section>
+
+      <section class="page-unit reflection-page" aria-labelledby="reflection-title">
+        <span class="editorial-section-number reflection-page__section-number" aria-hidden="true">06</span>
+
+        <header class="reflection-page__header">
+          <p>06 / REFLECTION</p>
+          <h2 id="reflection-title">从设计界面，到设计 AI 协作关系</h2>
+        </header>
+
+        <div class="reflection-page__sequence">
+          <article class="reflection-item reflection-item--interface">
+            <p class="reflection-item__index">01</p>
+            <h3>从「界面」到「协作关系」</h3>
+            <p>不只设计用户如何操作系统，<br>还要设计用户与 Agent 如何共同完成任务。</p>
+          </article>
+
+          <article class="reflection-item reflection-item--uncertainty">
+            <p class="reflection-item__index">02</p>
+            <h3>从「成功路径」到「不确定性」</h3>
+            <p>面对审批、阻塞、超时与未知状态，<br>不仅要让任务可理解、可恢复，也要让人能够重新介入。</p>
+          </article>
+
+          <article class="reflection-item reflection-item--responsibility">
+            <p class="reflection-item__index">03</p>
+            <h3>从「功能边界」到「责任边界」</h3>
+            <p>不只判断 Agent 能不能做，<br>还要定义它应该做到哪里、<br>什么时候必须交还控制权。</p>
+          </article>
+        </div>
+
+        <p class="reflection-page__statement">设计 Agent，<br>不只是设计它能做什么，<br>更重要的是设计什么时候由它做，<br>什么时候<span>交还给人</span>。</p>
+      </section>
+    </main>
+  </body>
+</html>
