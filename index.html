@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <script>
+      if (new URLSearchParams(window.location.search).get("capture") === "1") {
+        document.body.classList.add("capture-mode");
+      }
+    </script>
     <main>
       <section class="hero" aria-labelledby="hero-title" data-screen-label="首屏">
         <svg
@@ -311,6 +316,21 @@
               </div>
               <div class="project-entry__visual">
                 <img src="图片准备/zhfxpt_cover.webp" alt="综合分析平台产品界面" loading="lazy" decoding="async">
+                <span class="project-entry__cursor" aria-hidden="true">VIEW CASE</span>
+              </div>
+            </a>
+
+            <a class="project-entry project-entry--placeholder" href="ai-agent/index.html">
+              <div class="project-entry__header">
+                <p class="project-entry__eyebrow"><span class="project-entry__index">03 /</span> <span class="project-entry__category">AI WORKFLOW</span></p>
+                <h3>Agent 权限开通助手<span class="project-entry__icon" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M5 11 11 5M6 5h5v5" /></svg></span></h3>
+                <div class="project-entry__support">
+                  <p class="project-entry__description">Agent 主动完成权限判断、方案生成与跨系统执行</p>
+                </div>
+              </div>
+              <div class="project-entry__visual">
+                <img src="图片准备/AI Agent_cover.webp" alt="Agent 权限开通助手项目界面" loading="lazy" decoding="async">
+                <span class="project-entry__ai-badge">✦ AI 全流程参与设计</span>
                 <span class="project-entry__cursor" aria-hidden="true">VIEW CASE</span>
               </div>
             </a>
