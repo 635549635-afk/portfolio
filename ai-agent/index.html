@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="AI 工作流概念设计案例">
     <title>当AI Agent开始参与任务执行</title>
+    <link rel="preload" as="image" href="assets/cover-p01.png" fetchpriority="high">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -25,26 +26,17 @@
         </header>
 
         <div class="hero-visual" aria-label="方案生成、用户确认与 Agent 执行的产品流程界面">
-          <figure class="process-screen process-screen--execution">
-            <div class="process-screen__viewport">
-              <img src="assets/P03.png" alt="跨系统执行进度，包含成功、执行中、被阻塞和待审批状态">
-            </div>
-          </figure>
-
-          <figure class="process-screen process-screen--confirmation">
-            <div class="process-screen__viewport">
-              <img src="assets/P02.png" alt="权限与执行确认界面">
-            </div>
-          </figure>
-
           <figure class="process-screen process-screen--proposal">
             <div class="process-screen__viewport">
-              <img src="assets/main.png" alt="开通方案审阅与核心权限方案界面">
+              <img src="assets/cover-p01.png" alt="开通方案审阅与核心权限方案界面" loading="eager" fetchpriority="high">
             </div>
           </figure>
         </div>
 
-        <a class="prototype-cta" id="prototype" href="https://635549635-afk.github.io/atlas-permission-prototype/" target="_blank" rel="noopener noreferrer" aria-label="查看交互原型"></a>
+        <div class="prototype-cta">
+          <a class="prototype-cta__hotspot" id="prototype" href="https://635549635-afk.github.io/atlas-permission-prototype/" target="_blank" rel="noopener noreferrer" aria-label="查看交互原型"></a>
+          <img class="prototype-cta__image" src="assets/anniu.png" alt="" aria-hidden="true">
+        </div>
 
       </section>
 
@@ -237,23 +229,23 @@
             <div class="key-moment__copy">
               <p class="key-moment__label">WHY</p>
               <h3>为什么相信 Agent 的判断？</h3>
-              <p class="key-moment__design-principle">不是告诉用户「答案是什么」，<br>而是让用户知道「<span>答案从哪里来</span>」。</p>
-              <p class="key-moment__principle">判断有依据 <span>→</span> 建议可解释</p>
+              <p class="key-moment__design-principle">不只给出建议，<br>也让用户看见<span>建议背后的依据</span>。</p>
+              <p class="key-moment__principle">推荐有依据 <span>→</span> 限制条件可见</p>
             </div>
             <figure class="evidence-stage">
-              <img class="evidence-stage__full" src="assets/01.png" alt="完整权限方案与展开的方案依据">
+              <img class="evidence-stage__full" src="assets/p05-why.png" alt="完整权限方案与展开的方案依据">
             </figure>
           </article>
 
           <article class="key-moment key-moment--when">
             <figure class="evidence-stage">
-              <img class="evidence-stage__full" src="assets/02.png" alt="完整权限执行条件判断界面">
+              <img class="evidence-stage__full" src="assets/p05-when.png" alt="完整权限执行条件判断界面">
             </figure>
             <div class="key-moment__copy">
               <p class="key-moment__label">WHEN</p>
               <h3>什么时候交还控制权？</h3>
               <p class="key-moment__design-principle">Agent 可以判断「<span class="key-moment__accent--agent">能不能做</span>」，<br>但不替用户决定「<span class="key-moment__accent--human">要不要做</span>」。</p>
-              <p class="key-moment__principle"><strong class="key-moment__accent--agent">执行有边界</strong> <span>→</span> <strong class="key-moment__accent--human">控制可交还</strong></p>
+              <p class="key-moment__principle"><strong class="key-moment__accent--agent">执行有边界</strong> <span>→</span> <strong class="key-moment__accent--human">关键节点需确认</strong></p>
             </div>
           </article>
 
@@ -261,14 +253,67 @@
             <div class="key-moment__copy">
               <p class="key-moment__label">WHAT IF</p>
               <h3>Agent 做不下去怎么办？</h3>
-              <p class="key-moment__design-principle">异常不是执行的终点，<br>而是下一次「<span class="key-moment__accent--human">人机交接</span>」的起点。</p>
+              <p class="key-moment__design-principle">异常不等于执行失败，<br>关键是明确下一步<span class="key-moment__accent--human">由谁处理</span>。</p>
               <p class="key-moment__principle">异常可解释 <span>→</span> 任务可恢复</p>
             </div>
             <figure class="evidence-stage">
-              <img class="evidence-stage__full" src="assets/03.png" alt="完整跨系统执行进度与异常状态界面">
+              <img class="evidence-stage__full" src="assets/p05-what-if.png" alt="完整跨系统执行进度与异常状态界面">
             </figure>
           </article>
         </section>
+      </section>
+
+      <section class="page-unit print-key-moments-page print-key-moments-page--why" aria-labelledby="print-key-moments-why-title" hidden>
+        <span class="editorial-section-number print-key-moments-page__section-number" aria-hidden="true">05</span>
+        <header class="print-key-moments-page__header">
+          <p>05 / KEY MOMENTS</p>
+          <h2 id="print-key-moments-why-title">Agent 执行中的三个关键时刻</h2>
+        </header>
+
+        <article class="key-moment key-moment--why print-key-moment print-key-moment--why">
+          <div class="key-moment__copy">
+            <p class="key-moment__label">WHY</p>
+            <h3>为什么相信 Agent 的判断？</h3>
+            <p class="key-moment__design-principle">不只给出建议，<br>也让用户看见<span>建议背后的依据</span>。</p>
+            <p class="key-moment__principle">推荐有依据 <span>→</span> 限制条件可见</p>
+          </div>
+          <figure class="evidence-stage">
+            <img class="evidence-stage__full" src="assets/p05-why.png" alt="完整权限方案与展开的方案依据">
+          </figure>
+        </article>
+      </section>
+
+      <section class="page-unit print-key-moments-page print-key-moments-page--when-what-if" aria-labelledby="print-key-moments-when-title" hidden>
+        <header class="print-key-moments-page__header">
+          <p>05 / KEY MOMENTS</p>
+          <h2 id="print-key-moments-when-title">Agent 执行中的三个关键时刻</h2>
+        </header>
+
+        <div class="print-key-moments-page__stack">
+          <article class="key-moment key-moment--when print-key-moment print-key-moment--when">
+            <figure class="evidence-stage">
+              <img class="evidence-stage__full" src="assets/p05-when.png" alt="完整权限执行条件判断界面">
+            </figure>
+            <div class="key-moment__copy">
+              <p class="key-moment__label">WHEN</p>
+              <h3>什么时候交还控制权？</h3>
+              <p class="key-moment__design-principle">Agent 可以判断「<span class="key-moment__accent--agent">能不能做</span>」，<br>但不替用户决定「<span class="key-moment__accent--human">要不要做</span>」。</p>
+              <p class="key-moment__principle"><strong class="key-moment__accent--agent">执行有边界</strong> <span>→</span> <strong class="key-moment__accent--human">关键节点需确认</strong></p>
+            </div>
+          </article>
+
+          <article class="key-moment key-moment--what-if print-key-moment print-key-moment--what-if">
+            <div class="key-moment__copy">
+              <p class="key-moment__label">WHAT IF</p>
+              <h3>Agent 做不下去怎么办？</h3>
+              <p class="key-moment__design-principle">异常不等于执行失败，<br>关键是明确下一步<span class="key-moment__accent--human">由谁处理</span>。</p>
+              <p class="key-moment__principle">异常可解释 <span>→</span> 任务可恢复</p>
+            </div>
+            <figure class="evidence-stage">
+              <img class="evidence-stage__full" src="assets/p05-what-if.png" alt="完整跨系统执行进度与异常状态界面">
+            </figure>
+          </article>
+        </div>
       </section>
 
       <section class="page-unit reflection-page" aria-labelledby="reflection-title">
